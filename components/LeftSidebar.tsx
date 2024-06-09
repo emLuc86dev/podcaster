@@ -29,7 +29,10 @@ const LeftSidebar = () => {
               key={`${route}-${label}`}
               href={route}
               className={cn(
-                "flex gap-3 cursor-pointer items-center py-4 max-lg:px4 justify-center lg:justify-start"
+                "flex gap-3 cursor-pointer items-center py-4 max-lg:px4 justify-center lg:justify-start",
+                {
+                   'bg-nav-focus border-r-4 border-orange-1' :isActive
+                }
               )}
             >
               <Image src={imgURL} alt="Logo" width={23} height={27} />
