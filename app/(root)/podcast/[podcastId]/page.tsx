@@ -1,0 +1,10 @@
+
+const PodcastDetails = ({params}:{params: {podcastId: string}}) => {
+  return (
+    <p className="text-white-1">
+      Podcast details fro {params.podcastId}
+    </p>
+  )
+}
+
+export default PodcastDetails
