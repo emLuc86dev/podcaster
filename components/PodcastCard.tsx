@@ -7,12 +7,19 @@ interface PodcastCardProps {
   title: string;
 }
 
-const PodcastCard = ({ poscatId, description, imgURL, title }: PodcastCardProps) => {
-  return <div className="cursor-pointer">
-    <figure className="flex flex-col gap-2">
-        Image here
-    </figure>
-  </div>;
+const PodcastCard = ({
+  poscatId,
+  description,
+  imgURL,
+  title,
+}: PodcastCardProps) => {
+  return (
+    <div className="cursor-pointer">
+      <div className="flex flex-col gap-2">
+        <Image alt={title} src={imgURL} width={174} height={174} />
+      </div>
+    </div>
+  );
 };
 
 export default PodcastCard;
