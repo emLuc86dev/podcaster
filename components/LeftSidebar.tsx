@@ -36,7 +36,7 @@ const LeftSidebar = () => {
               )}
             >
               <Image src={imgURL} alt="Logo" width={23} height={27} />
-              <h1 className="text-24 font-extrabold text-white max-lg:hidden">
+              <h1 className="text-22 font-extrabold text-white max-lg:hidden">
                 {label}
               </h1>
             </Link>
